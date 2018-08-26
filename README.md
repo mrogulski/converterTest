@@ -18,7 +18,7 @@ Scripts allow to run automated tests on various browsers(currently Chrome, Firef
 ## Prerequisites
 
 1) [MAVEN](https://maven.apache.org/) -  download from official site and install
-2) [Gecko driver](https://github.com/mozilla/geckodriver/releases) - download and add to PATH
+2) [Gecko driver](https://github.com/mozilla/geckodriver/releases) - download and add to PATH environment variable
 3) [Chrome driver](http://chromedriver.chromium.org/downloads) - download and add to PATH
 
 ### Note
@@ -28,7 +28,7 @@ If you don't want to add drivers to PATH please uncomment following lines in Dri
  System.setProperty("webdriver.gecko.driver", "<path to geckodriver.exe>");
  System.setProperty("webdriver.chrome.driver", "<path to chromedriver.exe>");
  ```
-Please make sure path to drivers is correctly. Example:
+Please make sure that path to drivers is correct. Example:
 ```
 System.setProperty("webdriver.ie.driver", "D:\\selenium\\chromeDriver\\chromedriver.exe");
 ```
